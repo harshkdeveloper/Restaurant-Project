@@ -1,0 +1,45 @@
+{
+  "users": [
+    {
+      "id": "da64"
+    },
+    {
+      "id": "84fc",
+      "name": "harry",
+      "email": "harry@gmail.com",
+      "password": "@0123"
+    },
+    {
+      "id": "f329",
+      "email": "jasmin@gmail.com",
+      "name": "jasmin",
+      "password": "123456"
+    },
+    {
+      "id": "2cca",
+      "email": "john@gmail.com",
+      "name": "john",
+      "password": "123456"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "product": "jewellery",
+      "price": "20000",
+      "color": "white"
+    },
+    {
+      "id": "2a7b",
+      "product": "mobile",
+      "price": "40000",
+      "color": "blue"
+    },
+    {
+      "id": "5a6f",
+      "product": "Mobile",
+      "price": "780000",
+      "color": "blue"
+    }
+  ]
+}
