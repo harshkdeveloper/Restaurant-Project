@@ -30,7 +30,7 @@ const routes=[
 {
     name:'UpdateView',
     component:UpdateView,
-    path:'/update'
+    path:'/update/:id'
 
 },]
 const router =createRouter({

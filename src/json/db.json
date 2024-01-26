@@ -24,10 +24,10 @@
   ],
   "products": [
     {
-      "id": "1",
-      "product": "jewellery",
-      "price": "20000",
-      "color": "white"
+      "product": "mobile",
+      "price": "40000",
+      "color": "blu",
+      "id": "1"
     },
     {
       "id": "2a7b",
@@ -36,10 +36,10 @@
       "color": "blue"
     },
     {
-      "id": "5a6f",
       "product": "Mobile",
       "price": "780000",
-      "color": "blue"
+      "color": "blu",
+      "id": "5a6f"
     }
   ]
 }

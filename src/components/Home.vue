@@ -19,7 +19,7 @@
             <td>{{ item.product }}</td>
             <td>{{ item.color }}</td>
             <td>{{ item.price }}</td>
-            <td><router-link to='/update'>Update</router-link></td>
+            <td><router-link :to="`/update/`+item.id">Update</router-link></td>
         </tr>
     </table>
 </template>
@@ -67,5 +67,10 @@ table{
 td{
     height:40px;
     width:160px
+}
+a{
+    text-decoration: none;
+    color:black;
+    border-radius: 25px;
 }
 </style>
