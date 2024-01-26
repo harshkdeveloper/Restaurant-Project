@@ -24,22 +24,10 @@
   ],
   "products": [
     {
-      "product": "mobile",
-      "price": "40000",
-      "color": "blu",
-      "id": "1"
-    },
-    {
       "id": "2a7b",
       "product": "mobile",
       "price": "40000",
       "color": "blue"
-    },
-    {
-      "product": "Mobile",
-      "price": "780000",
-      "color": "blu",
-      "id": "5a6f"
     }
   ]
 }

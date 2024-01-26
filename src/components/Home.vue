@@ -19,7 +19,10 @@
             <td>{{ item.product }}</td>
             <td>{{ item.color }}</td>
             <td>{{ item.price }}</td>
-            <td><router-link :to="`/update/`+item.id">Update</router-link></td>
+            <td><router-link :to="`/update/`+item.id">Update</router-link>
+                <button v-on:click="deleteproduct(item.id)">Delete</button>
+            </td>
+            
         </tr>
     </table>
 </template>
@@ -36,21 +39,37 @@ export default{
             product:[]
         }
     },
-    async mounted() {
-        let user = localStorage.getItem('user-info');
+    methods:{
+async deleteproduct(id){
+let result=await axios.delete("http://localhost:3000/products/"+id)
+ {
+    if(result.status===200){
+        alert('product deleted')
+        this.loadData()
+    }
+ }
+
+
+},
+async loadData(){
+    let user = localStorage.getItem('user-info');
   
-        if(user){
-            this.name=JSON.parse(user).name
-        }
-        if (!user) {
-            
-            this.$router.push({ name: 'LoginPage' });
-        }
-     
-    let result= await axios.get('http://localhost:3000/products')
-        console.log(result)
-        this.product=result.data
-        console.log(this.product,'pppp')
+  if(user){
+      this.name=JSON.parse(user).name
+  }
+  if (!user) {
+      
+      this.$router.push({ name: 'LoginPage' });
+  }
+
+let result= await axios.get('http://localhost:3000/products')
+  console.log(result)
+  this.product=result.data
+  console.log(this.product,'pppp')
+}
+    },
+    async mounted() {
+      this.loadData()
      },
     //  async mounted(){
          
